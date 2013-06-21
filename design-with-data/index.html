@@ -9,71 +9,21 @@ grunticon( [ "icons.data.svg.css", "icons.data.png.css", "icons.fallback.css" ] 
 </html>
 						
 <head>
-<title>Design with data</title>
-<style>
-  * {
-    padding; 0;
-    margin: 0;
-  }
-
-  html {
-    /* could load nta from GOV.UK .. */
-    font-family: "nta", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
-  }
-
-  .page {
-    position: absolute;
-    width: 210mm;
-    height: 297mm;
-    overflow: hidden;
-  }
-
-  h2 {
-    font-size: 40mm;
-    margin: 5mm;
-  }
-
+  <title>Design with data</title>
+  <link rel="stylesheet" type="text/css" href="../page.css">
+  <style>
   .icon-cowpaths {
-    position: absolute;
-    z-index: -1;
     top: 26mm;
     left: 0;
     width: 210mm;
     height: 297mm;
-    background-size: 100%;
   }
-
-  .principles {
-    font-size: 2.75mm;
-    position: absolute;
-    bottom: 5mm;
-    right: 5mm;
-    width: 62mm;
-    line-height: 1.25em;
-  }
-
-  h3 {
-    margin-bottom: 1em;
-    font-size: 2.75mm;
-    width: 40mm;
-    font-weight: lighter;
-    margin-left: 10.5mm;
-  }
-
-  h3 strong {
-    font-weight: bold;
-  }
-
-  .selected {
-    color: red;
-  }
-
-</style>
+  </style>
 </head>
 <body>
     <div class="page">
       <h2>Design with data</h2>
-      <div class="icon-cowpaths"></div>
+      <div class="icon icon-cowpaths"></div>
       <div class="principles">
         <h3>Government Digital Service <strong>Design Principles</strong></h3>
         <ol>
