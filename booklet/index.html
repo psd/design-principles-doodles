@@ -1,0 +1,226 @@
+<!doctype html>
+<html>
+<head>
+  <title>GDS Design Principles Booklet</title>
+
+  <script src="../grunticon.js"></script>
+
+    <script>grunticon( [ "../start-with-needs/icons.data.svg.css", "../start-with-the-needs/icons.data.png.css", "../start-with-the-needs/icons.fallback.css" ] );</script>
+  <noscript><link href="../start-with-needs/icons.fallback.css" rel="stylesheet"></noscript>
+  <script>grunticon( [ "../do-less/icons.data.svg.css", "../do-less/icons.data.png.css", "../do-less/icons.fallback.css" ] );</script>
+  <noscript><link href="../do-less/icons.fallback.css" rel="stylesheet"></noscript>
+  <script>grunticon( [ "../build-for-inclusion/icons.data.svg.css", "../build-for-inclusion/icons.data.png.css", "../build-for-inclusion/icons.fallback.css" ] );</script>
+  <noscript><link href="../build-for-inclusion/icons.fallback.css" rel="stylesheet"></noscript>
+  <script>grunticon( [ "../design-with-data/icons.data.svg.css", "../design-with-data/icons.data.png.css", "../design-with-data/icons.fallback.css" ] );</script>
+  <noscript><link href="../design-with-data/icons.fallback.css" rel="stylesheet"></noscript>
+  <script>grunticon( [ "../do-the-hard-work-to-make-it-simple/icons.data.svg.css", "../do-the-hard-work-to-make-it-simple/icons.data.png.css", "../do-the-hard-work-to-make-it-simple/icons.fallback.css" ] );</script>
+  <noscript><link href="../do-the-hard-work-to-make-it-simple/icons.fallback.css" rel="stylesheet"></noscript>
+  <script>grunticon( [ "../iterate-then-iterate-again/icons.data.svg.css", "../iterate-then-iterate-again/icons.data.png.css", "../iterate-then-iterate-again/icons.fallback.css" ] );</script>
+  <noscript><link href="../iterate-then-iterate-again/icons.fallback.css" rel="stylesheet"></noscript>
+  <script>grunticon( [ "../understand-context/icons.data.svg.css", "../understand-context/icons.data.png.css", "../understand-context/icons.fallback.css" ] );</script>
+  <noscript><link href="../understand-context/icons.fallback.css" rel="stylesheet"></noscript>
+  <script>grunticon( [ "../build-digital-services-not-websites/icons.data.svg.css", "../build-digital-services-not-websites/icons.data.png.css", "../build-digital-services-not-websites/icons.fallback.css" ] );</script>
+  <noscript><link href="../build-digital-services-not-websites/icons.fallback.css" rel="stylesheet"></noscript>
+  <script>grunticon( [ "../be-consistent-not-uniform/icons.data.svg.css", "../be-consistent-not-uniform/icons.data.png.css", "../be-consistent-not-uniform/icons.fallback.css" ] );</script>
+  <noscript><link href="../be-consistent-not-uniform/icons.fallback.css" rel="stylesheet"></noscript>
+  <script>grunticon( [ "../make-things-open/icons.data.svg.css", "../make-things-open/icons.data.png.css", "../make-things-open/icons.fallback.css" ] );</script>
+  <noscript><link href="../make-things-open/icons.fallback.css" rel="stylesheet"></noscript>
+
+  <style>
+  * {
+    padding; 0;
+    margin: 0;
+  }
+
+  html {
+    /* could load nta from GOV.UK .. */
+    font-family: "nta", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  }
+
+  .booklet {
+   width: 420mm;
+   height: 200mm;
+   overflow: hidden;
+   border-bottom: 1px solid #a2a2a2;
+  }
+
+  .instructions {
+   width: 420mm;
+   height: 97mm;
+   overflow: hidden;
+  }
+
+  .page {
+    position: relative;
+    float: left;
+    height: 100mm;
+    width: 70mm;
+    overflow: hidden;
+  }
+
+  .top {
+    -webkit-transform: translate(0, 100mm) rotate(-180deg);
+  }
+
+
+  .cover h1 {
+    font-size: 5mm;
+    font-weight: 100;
+    color: #6f777b;
+    line-height: 1.1111111;
+    margin-top: 2mm;
+    margin-left: 4mm;
+  }
+
+  .cover h1 strong {
+    display: block;
+    float: left;
+    font-size: 7mm;
+    font-weight: bold;
+    color: #000;
+  }
+
+  h2 {
+    font-size: 11mm;
+    margin: 1.5mm;
+  }
+
+  h2 strong {
+    display: block;
+    position: absolute;
+    top: 80mm;
+    font-size: 8mm;
+    font-weight: lighter;
+    color: red;
+  }
+
+  .icon {
+    position: absolute;
+    z-index: -1;
+    width: 70mm;
+    height: 100mm;
+    background-size: 100%;
+  }
+
+  .icon-lowry {
+    top: 29mm;
+  }
+
+  .icon-eggbox {
+    top: 50mm;
+  }
+
+  .icon-eggbox {
+    top: 50mm;
+  }
+
+  .icon-cowpaths {
+    top: 1mm;
+  }
+
+  .icon-knotted {
+    top: 53mm;
+  }
+
+  .icon-inclusion {
+    top: 50mm;
+  }
+
+  .icon-iterate {
+    top: 10mm;
+  }
+
+  .icon-seats {
+    top: 50mm;
+  }
+
+  .icon-spoons {
+    top: 48mm;
+  }
+
+  .icon-silos {
+    top: 40mm;
+    width: 60mm;
+  }
+
+  </style>
+</head>
+<body>
+  <div class="booklet">
+    <div class="top">
+      <div class="cover page">
+        <h1>Government Digital Service <strong>Design Principles</strong></h1>
+      </div>
+
+      <div class="page">
+        <h2>Start with needs* <strong>*user needs, not government needs</strong></h2>
+        <div class="icon icon-lowry"></div>
+      </div>
+
+      <div class="page">
+        <h2>Do less</h2>
+        <div class="icon icon-eggbox"></div>
+      </div>
+
+      <div class="page">
+        <h2>Design with data</h2>
+        <div class="icon icon-cowpaths"></div>
+      </div>
+
+      <div class="page">
+        <h2>Do the hard work to make it simple</h2>
+        <div class="icon icon-knotted"></div>
+      </div>
+
+      <div class="page">
+        <h3>Government Digital Service <strong>Design Principles</strong></h3>
+        <ol>
+          <li>Start with needs</li>
+          <li>Do less</li>
+          <li>Design with data</li>
+          <li>Do the hard work to make it simple</li>
+          <li>Iterate. Then iterate again.</li>
+          <li>Build for inclusion</li>
+          <li>Understand context</li>
+          <li>Build digital services, not websites</li>
+          <li>Be consistent, not uniform</li>
+          <li>Make things open: it makes things better</li>
+        </ol>
+        <p><a href="https://www.gov.uk/designprinciples">www.gov.uk/designprinciples</a></p>
+      </div>
+    </div>
+    <div class="bottom">
+      <div class="page">
+        <h2>Iterate. <br/>Then <br/>iterate again.</h2>
+        <div class="icon icon-iterate"></div>
+      </div>
+
+      <div class="page">
+        <h2>Build for inclusion</h2>
+        <div class="icon icon-inclusion"></div>
+      </div>
+
+      <div class="page">
+        <h2>Understand context</h2>
+        <div class="icon icon-seats"></div>
+      </div>
+
+      <div class="page">
+        <h2>Build digital services, not websites</h2>
+        <div class="icon icon-silos"></div>
+      </div>
+
+      <div class="page">
+        <h2>Be consistent not uniform</h2>
+        <div class="icon icon-spoons"></div>
+      </div>
+
+      <div class="page">
+        <h2>Make things open, it makes them better</h2>
+        <div class="icon icon-feedback"></div>
+      </div>
+    </div>
+  </div>
+  <div id="instructions">
+  </div>
+</body>
