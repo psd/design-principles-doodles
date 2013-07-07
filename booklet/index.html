@@ -63,29 +63,30 @@
   }
 
   .booklet {
-   width: 425mm;
-   height: 200mm;
+   width: 297mm;
+   height: 160mm;
    overflow: hidden;
+   border: 1mm solid white;
   }
 
   .instructions {
-   width: 420mm;
-   height: 97mm;
+   width: 297mm;
+   height: 50mm;
    overflow: hidden;
   }
 
   .page {
     position: relative;
     float: left;
-    height: 95mm;
-    width: 70.25mm;
+    height: 80mm;
+    width: 57.815mm;
     overflow: hidden;
     margin: 0;
-    border: 0.5mm solid grey;
+    border: 1mm solid white;
   }
 
   .top {
-    -webkit-transform: translate(0, 95mm) rotate(-180deg);
+    -webkit-transform: translate(0, 81mm) rotate(-180deg);
   }
 
   ol {
@@ -110,33 +111,9 @@
     text-align: right;
   }
 
-  .cover p {
-    font-size: 3mm;
-    margin-left: 8mm;
-  }
-
   a, a:visited {
     color: #6f777b;
     text-decoration: none;
-  }
-
-  .cover h1 {
-    font-size: 4.75mm;
-    font-weight: 100;
-    color: #6f777b;
-    line-height: 1.1111111;
-    margin-top: 2mm;
-    margin-left: 4mm;
-    clear: left;
-  }
-
-  .cover h1 strong {
-    display: block;
-    float: left;
-    font-size: 7.5mm;
-    font-weight: bold;
-    color: #000;
-    clear: left;
   }
 
   h2 {
@@ -147,67 +124,67 @@
   h2 strong {
     display: block;
     position: absolute;
-    top: 77mm;
+    top: 62mm;
     left: 3mm;
-    font-size: 7mm;
+    font-size: 6mm;
     font-weight: lighter;
     color: red;
   }
 
   .icon {
     position: absolute;
-    z-index: -1;
-    width: 64mm;
+    z-index: 1;
+    width: 58mm;
     height: 100mm;
     background-size: 100%;
   }
 
   .icon-lowry {
-    top: 29mm;
+    top: 20mm;
   }
 
   .icon-eggbox {
-    top: 50mm;
-    left: -12mm;
+    top: 25mm;
+    left: -15mm;
     width: 104mm;
   }
 
-  .icon-eggbox {
-    top: 50mm;
-  }
-
   .icon-cowpaths {
-    top: 1mm;
+    top: 4mm;
+    width: 59.5mm;
   }
 
   .icon-knotted {
-    top: 53mm;
+    top: 44mm;
   }
 
   .icon-inclusion {
-    top: 50mm;
+    top: 45mm;
   }
 
   .icon-iterate {
-    top: 10mm;
+    top: 6mm;
   }
 
   .icon-seats {
-    top: 50mm;
+    top: 47mm;
   }
 
   .icon-spoons {
-    top: 48mm;
+    top: 45mm;
   }
 
   .icon-silos {
-    top: 40mm;
-    width: 60mm;
+    top: 32mm;
+  }
+
+  .icon-feedback {
+     left: -3mm;
   }
 
   .icon-instructions {
     margin: 10mm 120mm;
-    width: 180mm;
+    width: 100mm;
   }
 
   </style>
@@ -216,80 +193,61 @@
   <div class="booklet">
     <div class="top">
 
-      <div class="page">
+      <div id="start-with-needs" class="page">
         <h2>Start with needs* <strong>*user needs, not government needs</strong></h2>
         <div class="icon icon-lowry"></div>
       </div>
 
-      <div class="page">
+      <div id="do-less" class="page">
         <h2>Do less</h2>
         <div class="icon icon-eggbox"></div>
       </div>
 
-      <div class="page">
+      <div id="design-with-data" class="page">
         <h2>Design with data</h2>
         <div class="icon icon-cowpaths"></div>
       </div>
 
-      <div class="page">
+      <div id="do-the-hard-work-to-make-it-simple" class="page">
         <h2>Do the hard work to make it simple</h2>
         <div class="icon icon-knotted"></div>
       </div>
 
-      <div class="page">
+      <div id="iterate-then-iterate-again" class="page">
         <h2>Iterate. <br/>Then <br/>iterate again.</h2>
         <div class="icon icon-iterate"></div>
-      </div>
-
-      <div class="page">
-        <h2>Build for inclusion</h2>
-        <div class="icon icon-inclusion"></div>
       </div>
 
 
     </div>
 
     <div class="bottom">
-      <div class="page">
-        <p><a href="https://www.gov.uk/designprinciples">www.gov.uk/designprinciples</a></p>
+
+      <div id="build-for-inclusion" class="page">
+        <h2>Build for inclusion</h2>
+        <div class="icon icon-inclusion"></div>
       </div>
 
-      <div class="page">
+      <div id="understand-context" class="page">
         <h2>Understand context</h2>
         <div class="icon icon-seats"></div>
       </div>
 
-      <div class="page">
+      <div id="build-digital-services-not-websites" class="page">
         <h2>Build digital services, not websites</h2>
         <div class="icon icon-silos"></div>
       </div>
 
-      <div class="page">
+      <div id="be-consistent-not-uniform" class="page">
         <h2>Be consistent not uniform</h2>
         <div class="icon icon-spoons"></div>
       </div>
 
-      <div class="page">
+      <div id="make-things-open-it-makes-them-better" class="page">
         <h2>Make things open, it makes them better</h2>
         <div class="icon icon-feedback"></div>
       </div>
 
-      <div class="cover page">
-        <h1>Government Digital Service <strong>Design Principles</strong></h1>
-        <ol>
-          <li>Start with needs</li>
-          <li>Do less</li>
-          <li>Design with data</li>
-          <li>Do the hard work to make it simple</li>
-          <li>Iterate. Then iterate again.</li>
-          <li>Build for inclusion</li>
-          <li>Understand context</li>
-          <li>Build digital services, not websites</li>
-          <li>Be consistent, not uniform</li>
-          <li>Make things open: it makes things better</li>
-        </ol>
-        <p><a href="https://www.gov.uk/designprinciples">www.gov.uk/designprinciples</a></p>
-      </div>
     </div>
   </div>
   <div id="instructions">
