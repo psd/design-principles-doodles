@@ -4,27 +4,52 @@
   <title>GDS Design Principles Booklet</title>
 
   <script src="../grunticon.js"></script>
+  <script>
 
-    <script>grunticon( [ "../start-with-needs/icons.data.svg.css", "../start-with-the-needs/icons.data.png.css", "../start-with-the-needs/icons.fallback.css" ] );</script>
-  <noscript><link href="../start-with-needs/icons.fallback.css" rel="stylesheet"></noscript>
-  <script>grunticon( [ "../do-less/icons.data.svg.css", "../do-less/icons.data.png.css", "../do-less/icons.fallback.css" ] );</script>
-  <noscript><link href="../do-less/icons.fallback.css" rel="stylesheet"></noscript>
-  <script>grunticon( [ "../build-for-inclusion/icons.data.svg.css", "../build-for-inclusion/icons.data.png.css", "../build-for-inclusion/icons.fallback.css" ] );</script>
-  <noscript><link href="../build-for-inclusion/icons.fallback.css" rel="stylesheet"></noscript>
-  <script>grunticon( [ "../design-with-data/icons.data.svg.css", "../design-with-data/icons.data.png.css", "../design-with-data/icons.fallback.css" ] );</script>
-  <noscript><link href="../design-with-data/icons.fallback.css" rel="stylesheet"></noscript>
-  <script>grunticon( [ "../do-the-hard-work-to-make-it-simple/icons.data.svg.css", "../do-the-hard-work-to-make-it-simple/icons.data.png.css", "../do-the-hard-work-to-make-it-simple/icons.fallback.css" ] );</script>
-  <noscript><link href="../do-the-hard-work-to-make-it-simple/icons.fallback.css" rel="stylesheet"></noscript>
-  <script>grunticon( [ "../iterate-then-iterate-again/icons.data.svg.css", "../iterate-then-iterate-again/icons.data.png.css", "../iterate-then-iterate-again/icons.fallback.css" ] );</script>
-  <noscript><link href="../iterate-then-iterate-again/icons.fallback.css" rel="stylesheet"></noscript>
-  <script>grunticon( [ "../understand-context/icons.data.svg.css", "../understand-context/icons.data.png.css", "../understand-context/icons.fallback.css" ] );</script>
-  <noscript><link href="../understand-context/icons.fallback.css" rel="stylesheet"></noscript>
-  <script>grunticon( [ "../build-digital-services-not-websites/icons.data.svg.css", "../build-digital-services-not-websites/icons.data.png.css", "../build-digital-services-not-websites/icons.fallback.css" ] );</script>
-  <noscript><link href="../build-digital-services-not-websites/icons.fallback.css" rel="stylesheet"></noscript>
-  <script>grunticon( [ "../be-consistent-not-uniform/icons.data.svg.css", "../be-consistent-not-uniform/icons.data.png.css", "../be-consistent-not-uniform/icons.fallback.css" ] );</script>
-  <noscript><link href="../be-consistent-not-uniform/icons.fallback.css" rel="stylesheet"></noscript>
-  <script>grunticon( [ "../make-things-open/icons.data.svg.css", "../make-things-open/icons.data.png.css", "../make-things-open/icons.fallback.css" ] );</script>
-  <noscript><link href="../make-things-open/icons.fallback.css" rel="stylesheet"></noscript>
+  /* load backgrund SVG images, degrade to png */
+  var icons = [
+    "start-with-needs",
+    "do-less",
+    "build-for-inclusion",
+    "design-with-data",
+    "do-the-hard-work-to-make-it-simple",
+    "iterate-then-iterate-again",
+    "understand-context",
+    "build-digital-services-not-websites",
+    "be-consistent-not-uniform",
+    "make-things-open",
+    "booklet"
+  ];
+
+  var files = [
+    "/icons.data.svg.css",
+    "/icons.data.png.css",
+    "/icons.fallback.css"
+  ];
+
+  var paths;
+
+  for (var icon = 0; icon < icons.length; icon++) {
+    paths = [];
+    for (var file = 0; file < files.length; file++) {
+      paths.push("../" + icons[icon] + files[file]);
+    }
+    grunticon(paths);
+  }
+  </script>
+  <noscript>
+    <link href="../start-with-needs/icons.fallback.css" rel="stylesheet">
+    <link href="../do-less/icons.fallback.css" rel="stylesheet">
+    <link href="../build-for-inclusion/icons.fallback.css" rel="stylesheet">
+    <link href="../design-with-data/icons.fallback.css" rel="stylesheet">
+    <link href="../do-the-hard-work-to-make-it-simple/icons.fallback.css" rel="stylesheet">
+    <link href="../iterate-then-iterate-again/icons.fallback.css" rel="stylesheet">
+    <link href="../understand-context/icons.fallback.css" rel="stylesheet">
+    <link href="../build-digital-services-not-websites/icons.fallback.css" rel="stylesheet">
+    <link href="../be-consistent-not-uniform/icons.fallback.css" rel="stylesheet">
+    <link href="../make-things-open/icons.fallback.css" rel="stylesheet">
+    <link href="../booklet/icons.fallback.css" rel="stylesheet">
+  </noscript>
 
   <style>
   * {
@@ -38,10 +63,9 @@
   }
 
   .booklet {
-   width: 420mm;
+   width: 425mm;
    height: 200mm;
    overflow: hidden;
-   border-bottom: 1px solid #a2a2a2;
   }
 
   .instructions {
@@ -53,43 +77,79 @@
   .page {
     position: relative;
     float: left;
-    height: 100mm;
-    width: 70mm;
+    height: 95mm;
+    width: 70.25mm;
     overflow: hidden;
+    margin: 0;
+    border: 0.5mm solid grey;
   }
 
   .top {
-    -webkit-transform: translate(0, 100mm) rotate(-180deg);
+    -webkit-transform: translate(0, 95mm) rotate(-180deg);
   }
 
+  ol {
+    clear: left;
+    counter-reset: item;
+    margin: 12.5mm 0;
+    font-size: 3mm;
+  }
+
+  li {
+    display: block;
+    position: relative;
+  }
+
+  li:before {
+    position: absolute;
+    content: counter(item);
+    counter-increment: item;
+    left: -8mm;
+    color: #6f777b;
+    width: 5mm;
+    text-align: right;
+  }
+
+  .cover p {
+    font-size: 3mm;
+    margin-left: 8mm;
+  }
+
+  a, a:visited {
+    color: #6f777b;
+    text-decoration: none;
+  }
 
   .cover h1 {
-    font-size: 5mm;
+    font-size: 4.75mm;
     font-weight: 100;
     color: #6f777b;
     line-height: 1.1111111;
     margin-top: 2mm;
     margin-left: 4mm;
+    clear: left;
   }
 
   .cover h1 strong {
     display: block;
     float: left;
-    font-size: 7mm;
+    font-size: 7.5mm;
     font-weight: bold;
     color: #000;
+    clear: left;
   }
 
   h2 {
-    font-size: 11mm;
-    margin: 1.5mm;
+    font-size: 7mm;
+    margin: 3mm;
   }
 
   h2 strong {
     display: block;
     position: absolute;
-    top: 80mm;
-    font-size: 8mm;
+    top: 77mm;
+    left: 3mm;
+    font-size: 7mm;
     font-weight: lighter;
     color: red;
   }
@@ -97,7 +157,7 @@
   .icon {
     position: absolute;
     z-index: -1;
-    width: 70mm;
+    width: 64mm;
     height: 100mm;
     background-size: 100%;
   }
@@ -108,6 +168,8 @@
 
   .icon-eggbox {
     top: 50mm;
+    left: -12mm;
+    width: 104mm;
   }
 
   .icon-eggbox {
@@ -143,14 +205,16 @@
     width: 60mm;
   }
 
+  .icon-instructions {
+    margin: 10mm 120mm;
+    width: 180mm;
+  }
+
   </style>
 </head>
 <body>
   <div class="booklet">
     <div class="top">
-      <div class="cover page">
-        <h1>Government Digital Service <strong>Design Principles</strong></h1>
-      </div>
 
       <div class="page">
         <h2>Start with needs* <strong>*user needs, not government needs</strong></h2>
@@ -173,24 +237,6 @@
       </div>
 
       <div class="page">
-        <h3>Government Digital Service <strong>Design Principles</strong></h3>
-        <ol>
-          <li>Start with needs</li>
-          <li>Do less</li>
-          <li>Design with data</li>
-          <li>Do the hard work to make it simple</li>
-          <li>Iterate. Then iterate again.</li>
-          <li>Build for inclusion</li>
-          <li>Understand context</li>
-          <li>Build digital services, not websites</li>
-          <li>Be consistent, not uniform</li>
-          <li>Make things open: it makes things better</li>
-        </ol>
-        <p><a href="https://www.gov.uk/designprinciples">www.gov.uk/designprinciples</a></p>
-      </div>
-    </div>
-    <div class="bottom">
-      <div class="page">
         <h2>Iterate. <br/>Then <br/>iterate again.</h2>
         <div class="icon icon-iterate"></div>
       </div>
@@ -198,6 +244,14 @@
       <div class="page">
         <h2>Build for inclusion</h2>
         <div class="icon icon-inclusion"></div>
+      </div>
+
+
+    </div>
+
+    <div class="bottom">
+      <div class="page">
+        <p><a href="https://www.gov.uk/designprinciples">www.gov.uk/designprinciples</a></p>
       </div>
 
       <div class="page">
@@ -219,8 +273,26 @@
         <h2>Make things open, it makes them better</h2>
         <div class="icon icon-feedback"></div>
       </div>
+
+      <div class="cover page">
+        <h1>Government Digital Service <strong>Design Principles</strong></h1>
+        <ol>
+          <li>Start with needs</li>
+          <li>Do less</li>
+          <li>Design with data</li>
+          <li>Do the hard work to make it simple</li>
+          <li>Iterate. Then iterate again.</li>
+          <li>Build for inclusion</li>
+          <li>Understand context</li>
+          <li>Build digital services, not websites</li>
+          <li>Be consistent, not uniform</li>
+          <li>Make things open: it makes things better</li>
+        </ol>
+        <p><a href="https://www.gov.uk/designprinciples">www.gov.uk/designprinciples</a></p>
+      </div>
     </div>
   </div>
   <div id="instructions">
+    <div class="icon icon-instructions"></div>
   </div>
 </body>
