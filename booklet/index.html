@@ -2,6 +2,7 @@
 <html>
 <head>
   <title>GDS Design Principles Booklet</title>
+  <meta charset="utf-8">
 
   <script src="../grunticon.js"></script>
   <script>
@@ -62,6 +63,12 @@
     font-family: "nta", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
   }
 
+  .sheet {
+    position: relative;
+    page-break-inside: avoid;
+    height: 210mm;
+  }
+
   .booklet {
    width: 297mm;
    height: 160mm;
@@ -70,7 +77,7 @@
   }
 
   .instructions {
-   width: 297mm;
+   width: 200mm;
    height: 50mm;
    overflow: hidden;
   }
@@ -89,35 +96,13 @@
     -webkit-transform: translate(0, 81mm) rotate(-180deg);
   }
 
-  ol {
-    clear: left;
-    counter-reset: item;
-    margin: 12.5mm 0;
-    font-size: 3mm;
-  }
-
-  li {
-    display: block;
-    position: relative;
-  }
-
-  li:before {
-    position: absolute;
-    content: counter(item);
-    counter-increment: item;
-    left: -8mm;
-    color: #6f777b;
-    width: 5mm;
-    text-align: right;
-  }
-
   a, a:visited {
     color: #6f777b;
     text-decoration: none;
   }
 
   h2 {
-    font-size: 7mm;
+    font-size: 6mm;
     margin: 3mm;
   }
 
@@ -126,9 +111,17 @@
     position: absolute;
     top: 62mm;
     left: 3mm;
-    font-size: 6mm;
+    font-size: 5mm;
     font-weight: lighter;
     color: red;
+  }
+
+  .back h2 {
+    font-weight: normal;
+  }
+
+  .back h2 strong {
+    position: initial;
   }
 
   .icon {
@@ -190,6 +183,7 @@
   </style>
 </head>
 <body>
+<div class="front sheet">
   <div class="booklet">
     <div class="top">
 
@@ -253,4 +247,60 @@
   <div id="instructions">
     <div class="icon icon-instructions"></div>
   </div>
+</div>
+
+<div class="back sheet">
+  <div class="booklet">
+    <div class="top">
+      <div id="text-start-with-needs" class="page">
+        <h2>Start with needs* <strong>*user needs, not government needs</strong></h2>
+        <p>
+        The design process must start with identifying and thinking about real user needs. We should design around those — not around the way the ‘official process’ is at the moment. We must understand those needs thoroughly — interrogating data, not just making assumptions — and we should remember that what users ask for is not always what they need.
+        </p>
+      </div>
+
+      <div id="text-do-less" class="page">
+        <h2>Do less</h2>
+      </div>
+
+      <div id="text-design-with-data" class="page">
+        <h2>Design with data</h2>
+      </div>
+
+      <div id="text-do-the-hard-work-to-make-it-simple" class="page">
+        <h2>Do the hard work to make it simple</h2>
+      </div>
+
+      <div id="text-iterate-then-iterate-again" class="page">
+        <h2>Iterate. <br/>Then <br/>iterate again.</h2>
+      </div>
+
+
+    </div>
+
+    <div class="bottom">
+
+      <div id="text-build-for-inclusion" class="page">
+        <h2>Build for inclusion</h2>
+      </div>
+
+      <div id="text-understand-context" class="page">
+        <h2>Understand context</h2>
+      </div>
+
+      <div id="text-build-digital-services-not-websites" class="page">
+        <h2>Build digital services, not websites</h2>
+      </div>
+
+      <div id="text-be-consistent-not-uniform" class="page">
+        <h2>Be consistent not uniform</h2>
+      </div>
+
+      <div id="text-make-things-open-it-makes-them-better" class="page">
+        <h2>Make things open, it makes them better</h2>
+      </div>
+
+    </div>
+  </div>
+</div>
 </body>
