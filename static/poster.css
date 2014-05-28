@@ -1,0 +1,53 @@
+* {
+  padding; 0;
+  margin: 0;
+}
+
+html {
+  /* could load nta from GOV.UK .. */
+  font-family: "nta", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+}
+
+.page {
+  position: absolute;
+  width: 210mm;
+  height: 297mm;
+  overflow: hidden;
+}
+
+h2 {
+  font-size: 40mm;
+  margin: 5mm;
+  line-height: 0.925;
+}
+
+.principles {
+  font-size: 2.75mm;
+  position: absolute;
+  bottom: 5mm;
+  right: 5mm;
+  width: 62mm;
+  line-height: 1.25;
+}
+
+h3 {
+  margin-bottom: 1em;
+  font-size: 2.75mm;
+  width: 40mm;
+  font-weight: lighter;
+  margin-left: 10.5mm;
+}
+
+h3 strong {
+  font-weight: bold;
+}
+
+.selected {
+  color: red;
+}
+
+.icon {
+  position: absolute;
+  z-index: -1;
+  width: 210mm;
+}

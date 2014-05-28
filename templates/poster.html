@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+<head>
+  <title>{{ title }}</title>
+  <link rel="stylesheet" type="text/css" href="../static/poster.css">
+  <style>
+	h2 {
+    {{#font-size}}font-size: {{ font-size }};{{/font-size}}
+	}
+  .icon-{{ drawing }} {
+    {{#drawing-top}}top: {{ drawing-top }};{{/drawing-top}}
+    {{#drawing-left}}left: {{ drawing-left }};{{/drawing-left}}
+    {{#drawing-width}}width: {{ drawing-width }}{{/drawing-width}};
+  }
+
+  .principles ol > li:nth-child({{ number }}) {
+    color: red;
+  }
+  </style>
+</head>
+<body>
+    <div class="page">
+      <h2>{{ title }}</h2>
+      <img class="icon icon-{{ drawing }}" src="../drawings/{{ drawing }}.svg">
+      <div class="principles">
+        <h3>Government Digital Service <strong>Design Principles</strong></h3>
+        <ol>
+          <li>User needs, not government needs</li>
+          <li>Do less</li>
+          <li>Design with data</li>
+          <li>Do the hard work to make it simple</li>
+          <li>Iterate. Then iterate again.</li>
+          <li>This is for everyone</li>
+          <li>The unit of delivery is the team</li>
+          <li>Build things people can build on</li>
+          <li>Be consistent not uniform</li>
+          <li>Make things open, it makes them better</li>
+        </ol>
+      </div>
+    </div>
+</body>
+</html>
