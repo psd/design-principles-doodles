@@ -2,7 +2,7 @@
 number: 3
 title: Design with data
 drawing: cowpaths
-drawing-top: 20mm
+drawing-top: 25mm
 ---
 
 Normally, we’re not starting from scratch — people are already using our services. This means we can learn from real world behaviour by looking at how services are actually used. We should keep doing that long after release, prototyping and testing with users on the live web.

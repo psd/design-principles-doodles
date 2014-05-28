@@ -3,7 +3,7 @@ number: 10
 title: Make things open, it makes them better
 font-size: 35mm
 drawing: feedback
-drawing-top: 42mm
+drawing-top: 117mm
 ---
 
 We should share what we’re doing whenever we can. With colleagues, with users, with the world. Share code, share designs, share ideas, share intentions, share failures. The more eyes there are on a service the better it gets — howlers are spotted, better alternatives are pointed out, the bar is raised.

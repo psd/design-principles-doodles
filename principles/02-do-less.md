@@ -2,7 +2,7 @@
 number: 2
 title: Do less
 drawing: glass
-drawing-top: 10mm
+drawing-top: 45mm
 drawing-left: 30mm
 drawing-width: 150mm
 ---

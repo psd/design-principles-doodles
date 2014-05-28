@@ -3,7 +3,7 @@ number: 8
 title: Build things people can build on
 drawing: brick
 font-size: 36mm
-drawing-top: 60mm
+drawing-top: 140mm
 drawing-width: 175mm
 drawing-left: 10mm
 ---
