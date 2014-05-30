@@ -1,6 +1,11 @@
 {
     "name": "design-principles-doodles",
     "version": "0.0.1",
+    "repository" :
+    {
+        "type" : "git", 
+        "url" : "https://github.com/psd/design-principles-doodles"
+    },
     "dependencies": {
         "pagemaker": "*"
     }
