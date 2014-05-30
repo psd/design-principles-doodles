@@ -9,6 +9,16 @@ POSTERS_PDFS := $(POSTERS_HTMLS:.html=.pdf)
 
 all:	$(POSTERS_DIR)/posters.pdf
 
+init::
+	@type  node >/dev/null 2>&1 || { echo >&2 "node command not found"; exit 1; }
+	@type  npm >/dev/null 2>&1 || { echo >&2 "npm command not found"; exit 1; }
+	@type  wkhtmltopdf >/dev/null 2>&1 || { echo >&2 "wkhtmltopdf command not found"; exit 1; }
+	@type gs >/dev/null 2>&1 || { echo >&2 "ghostscript gs command not found"; exit 1; }
+
+	npm install
+	@type  pagemaker >/dev/null 2>&1 || { echo >&2 "pagemaker command not found"; exit 1; }
+
+
 clean::
 	rm -rf $(POSTERS_DIR) $(SLIDES_DIR) $(BOOKLET_DIR)
 
