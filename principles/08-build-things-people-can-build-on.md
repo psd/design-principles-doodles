@@ -2,10 +2,16 @@
 number: 8
 title: Build things people can build on
 drawing: brick
+
 font-size: 36mm
 drawing-top: 140mm
 drawing-width: 175mm
 drawing-left: 10mm
+
+postcard-title-width: 92mm
+postcard-drawing-width: 100mm
+postcard-drawing-top: 33mm
+postcard-drawing-left: 20mm
 ---
 
 If the internet has taught us anything, it’s that you’ll never be able to guess all the uses people have of the things you release. We need to design for that, even if we can’t control it. 

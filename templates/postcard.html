@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+<head>
+  <title>{{ title }}</title>
+  <link rel="stylesheet" type="text/css" href="../static/postcard.css">
+  <style>
+  .postcard h2 {
+    {{#postcard-title-font-size}}font-size: {{ postcard-title-font-size }};{{/postcard-title-font-size}}
+    {{#postcard-title-text-align}}text-align: {{ postcard-title-text-align }};{{/postcard-title-text-align}}
+    {{#postcard-title-width}}width: {{ postcard-title-width }};{{/postcard-title-width}}
+    {{#postcard-title-margin}}top: {{ postcard-title-margin }};{{/postcard-title-margin}}
+    {{#postcard-title-top}}top: {{ postcard-title-top }};{{/postcard-title-top}}
+    {{#postcard-title-bottom}}bottom: {{ postcard-title-bottom }};{{/postcard-title-bottom}}
+    {{#postcard-title-left}}left: {{ postcard-title-left }};{{/postcard-title-left}}
+    {{#postcard-title-right}}right: {{ postcard-title-right }};{{/postcard-title-right}}
+  }
+  .postcard .drawing {
+    {{#postcard-drawing-top}}top: {{ postcard-drawing-top }};{{/postcard-drawing-top}}
+    {{#postcard-drawing-bottom}}bottom: {{ postcard-drawing-bottom }};{{/postcard-drawing-bottom}}
+    {{#postcard-drawing-left}}left: {{ postcard-drawing-left }};{{/postcard-drawing-left}}
+    {{#postcard-drawing-right}}right: {{ postcard-drawing-right }};{{/postcard-drawing-right}}
+    {{#postcard-drawing-width}}width: {{ postcard-drawing-width }}{{/postcard-drawing-width}};
+    {{#postcard-drawing-webkit-transform}}-webkit-transform: {{ postcard-drawing-webkit-transform }}{{/postcard-drawing-webkit-transform}};
+  }
+  </style>
+</head>
+<body>
+    <div class="postcard">
+      <h2>{{ title }}</h2>
+      <img class="drawing drawing-{{ drawing }}" src="../drawings/{{ drawing }}.svg">
+    </div>
+</body>
+</html>

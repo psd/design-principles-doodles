@@ -1,0 +1,32 @@
+* {
+  padding; 0;
+  margin: 0;
+}
+
+html {
+  /* could load nta from GOV.UK .. */
+  font-family: "nta", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+	background-color: #eee;
+}
+
+.postcard {
+  position: absolute;
+  width: 148mm;
+  height: 105mm;
+  overflow: hidden;
+  background-color: #fff;
+}
+
+.postcard h2 {
+  margin: 5mm;
+  font-size: 10mm;
+  line-height: 1.25;
+  position: absolute;
+  z-index: 1;
+}
+
+.postcard .drawing {
+  position: absolute;
+  z-index: 0;
+  width: 148mm;
+}

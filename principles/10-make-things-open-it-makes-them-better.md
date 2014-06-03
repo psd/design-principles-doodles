@@ -1,9 +1,20 @@
 ---
 number: 10
 title: Make things open, it makes them better
+
 font-size: 35mm
 drawing: feedback
 drawing-top: 117mm
+
+postcard-title-font-size: 10mm
+postcard-title-width: 85mm
+postcard-title-top: 33mm
+postcard-title-left: 26mm
+postcard-title-text-align: center
+
+postcard-drawing-top: -16mm
+postcard-drawing-left: -23mm
+postcard-drawing-width: 180mm
 ---
 
 We should share what we’re doing whenever we can. With colleagues, with users, with the world. Share code, share designs, share ideas, share intentions, share failures. The more eyes there are on a service the better it gets — howlers are spotted, better alternatives are pointed out, the bar is raised.

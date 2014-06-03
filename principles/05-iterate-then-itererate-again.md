@@ -2,7 +2,12 @@
 number: 5
 title: Iterate, then iterate again
 drawing: iterate
+
 drawing-top: 10mm
+
+postcard-title-width: 80mm
+postcard-drawing-width: 82mm
+postcard-drawing-right: 2mm
 ---
 
 The best way to build good services is to start small and iterate wildly. Release Minimum Viable Products early, test them with actual users, move from Alpha to Beta to Live adding features, deleting things that don’t work and making refinements based on feedback.

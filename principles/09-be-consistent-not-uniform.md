@@ -3,6 +3,10 @@ number: 9
 title: Be consistent not uniform
 drawing: spoons
 drawing-top: 170mm
+
+postcard-title-bottom: 10mm
+postcard-title-left: 6mm
+postcard-drawing-top: 16mm
 ---
 
 We should use the same language and the same design patterns wherever possible. This helps people get familiar with our services, but when this isn’t possible we should make sure our approach is consistent.

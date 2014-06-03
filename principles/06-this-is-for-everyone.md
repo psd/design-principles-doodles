@@ -2,6 +2,7 @@
 number: 6
 title: This is for everyone
 drawing: ballot
+
 drawing-top: 90mm
 ---
 

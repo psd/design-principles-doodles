@@ -4,6 +4,8 @@ title: User needs, not government needs
 font-size: 35mm
 drawing: lowry
 drawing-top: 117mm
+
+postcard-drawing-top: 12mm
 ---
 
 Design must start with identifying the needs users have of a service. We must understand these thoroughly, researching and analysing data, not just making assumptions. We must have empathy for our users, and should remember that what they ask for isn't always what they need. Then, we must design to meet those needs — not around the way the ‘official process’ is at the moment.
