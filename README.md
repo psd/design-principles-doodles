@@ -6,9 +6,22 @@ Building the posters is a little bit of a bother, so they're here:
 - [slides](slides) — each principle as a 4:3 slide
 - [booklet](booklet) — a folding booklet of the principles
 
+## Postcards
+
+![01](postcards/01-user-needs-not-government-needs.png)
+![02](postcards/02-do-less.png)
+![03](postcards/03-design-with-data.png)
+![04](postcards/04-do-the-hard-work-to-make-it-simple.png)
+![05](postcards/05-iterate-then-itererate-again.png)
+![06](postcards/06-this-is-for-everyone.png)
+![07](postcards/07-the-unit-of-delivery-is-the-team.png)
+![08](postcards/08-build-things-people-can-build-on.png)
+![09](postcards/09-be-consistent-not-uniform.png)
+![10](postcards/10-make-things-open-it-makes-them-better.png)
+
 ## Source
-- [principles](principles) — markdown and metadata for each principle.
 - [drawings](drawings) — the original drawings as SVG
+- [principles](principles) — markdown and metadata for each principle.
 - [templates](templates) — HTML templates for the posters
 - [static](static) — CSS and other things used to build the posters
 
