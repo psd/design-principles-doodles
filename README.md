@@ -1,4 +1,6 @@
-Posters and other doodled artwork for the [Government Digital Service Design Principles](https://www.gov.uk/designprinciples) published under the [Open Government Licence](http://www.nationalarchives.gov.uk/doc/open-government-licence/).
+Posters and other doodled artwork for the [Government Digital Service Design Principles](https://www.gov.uk/designprinciples).
+
+The content is [Crown Copyright](https://www.nationalarchives.gov.uk/information-management/re-using-public-sector-information/uk-government-licensing-framework/crown-copyright/) and published under the [Open Government Licence v3.0](https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/).
 
 Building the posters is a little bit of a bother, so they're here:
 - [posters](posters) — each principle on an A4 page
